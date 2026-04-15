@@ -1,148 +1,121 @@
-body{
-  
-
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Global */
-.container{
-  
-
+/* HEADER */
+header {
+    background: #2f3e4e;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #ff5722;
 }
 
-ul{
-  
-
+.logo {
+    font-size: 26px;
+    font-weight: bold;
 }
 
-.button_1{
-  
-
+.logo span {
+    color: #ff5722;
 }
 
-.dark{
-  
-
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
 }
 
-/* Header **/
-header{
-  
-
+nav a.active {
+    color: #ff5722;
 }
 
-header a{
- 
-
+/* BANNER */
+.banner {
+    background: url('banner.jpg') no-repeat center/cover;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
 }
 
-header li{
-  
-
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
 }
 
-header #branding{
-  
-
+.banner-content {
+    position: relative;
+    z-index: 1;
 }
 
-header #branding h1{
- 
-
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
-header nav{
- 
-
+.banner p {
+    font-size: 18px;
 }
 
-header .highlight, header .current a{
-  
-
+/* SUBSCRIBE */
+.subscribe {
+    background: #344955;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
-header a:hover{
-  
-
+.subscribe input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    outline: none;
 }
 
-/* Showcase */
-#showcase{
-  
-
+.subscribe button {
+    padding: 10px 20px;
+    background: #ff5722;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
-#showcase h1{
-  
-
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 60px;
+    background: #f5f5f5;
+    text-align: center;
 }
 
-#showcase p{
-  
-
+.feature {
+    width: 30%;
 }
 
-/* Newsletter */
-#newsletter{
-  
-
+.feature img {
+    width: 60px;
+    margin-bottom: 15px;
 }
 
-#newsletter h1{
- 
-
+.feature h3 {
+    margin-top: 10px;
 }
-
-#newsletter form {
- 
-
-}
-
-#newsletter input[type="email"]{
-  
-
-}
-
-/* Boxes */
-#boxes{
-  
-
-}
-
-#boxes .box{
-  
-
-}
-
-#boxes .box img{
- 
-
-}
-
-/* Sidebar */
-aside#sidebar{
-  
-
-}
-
-aside#sidebar .quote input, aside#sidebar .quote textarea{
-  
-
-}
-
-/* Main-col */
-article#main-col{
-  
-
-}
-
-/* Services */
-ul#services li{
-  
-
-}
-
-footer{
-  
-
-}
-
